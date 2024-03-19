@@ -1,0 +1,22 @@
+:root {
+   --on-primary: #0E153A;
+   --on-secondary: #3D5AF1;
+   --on-tertiary: #22D1EE;
+   --white: #FFFFFF;
+}
+
+
+* {
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+
+body {
+   background-color: var(--on-primary);
+   color: var(--white);
+}
+
+span.name {
+   color: var(--on-tertiary)
+}
