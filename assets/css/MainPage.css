@@ -17,6 +17,16 @@ body {
    color: var(--white);
 }
 
+.menu {
+   display: flex;
+   justify-content: right;
+}
+
+.menu > .nav {
+   padding:20px;
+   
+}
+
 span.name {
    color: var(--on-tertiary)
 }
