@@ -31,3 +31,6 @@ span.name {
    color: var(--on-tertiary)
 }
 
+.view_more {
+   margin: 0 auto;
+}
