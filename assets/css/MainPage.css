@@ -31,6 +31,17 @@ span.name {
    color: var(--on-tertiary)
 }
 
-.view_more {
+.main > .view_more {
+   display: flex;
    margin: 0 auto;
+}
+
+.view_more {
+   border: 1px solid red;
+   padding: 2px 30px;
+   display: flex;
+   justify-content: center;
+   position:fixed;
+   top: 95%;
+   left: 50%
 }
