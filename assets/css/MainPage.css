@@ -37,7 +37,6 @@ span.name {
 }
 
 .view_more {
-   border: 1px solid red;
    padding: 2px 30px;
    display: flex;
    justify-content: center;
@@ -45,3 +44,4 @@ span.name {
    top: 95%;
    left: 50%
 }
+
