@@ -5,6 +5,16 @@
    --white: #FFFFFF;
 }
 
+/* IMPORTED FONTS */
+@font-face {
+   font-family: 'Tw Cen MT Condensed Bold';
+   src: url('./../fonts/Tw Cen MT Condensed Bold.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'Tw Cen MT Condensed Extra Bold Regular';
+   src: url('./../fonts/Tw Cen MT Condensed Extra Bold Regular.ttf') format('truetype');
+}
 
 * {
    box-sizing: border-box;
