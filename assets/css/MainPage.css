@@ -21,6 +21,10 @@
    margin:0;
    padding:0;
 }
+.main {
+   height: 100vh;
+   display: flex;
+}
 
 body {
    background-color: var(--on-primary);
@@ -50,8 +54,22 @@ span.name {
    padding: 2px 30px;
    display: flex;
    justify-content: center;
-   position:fixed;
+   position:absolute;
    top: 95%;
    left: 50%
 }
 
+.my-info {
+   border: 1px solid red;
+   position: relative;
+   width: 100%;
+   margin: auto 0;
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+}
+
+.me{
+   display: block;
+   width: 100%;
+}
