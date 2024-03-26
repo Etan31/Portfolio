@@ -60,7 +60,8 @@ span.name {
 }
 
 .my-info {
-   border: 1px solid red;
+   transform: translateY(-50%);
+   font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
    position: relative;
    width: 100%;
    margin: auto 0;
@@ -70,6 +71,9 @@ span.name {
 }
 
 .me{
-   display: block;
+   padding-left: clamp(5vw, 100%, 5vw);
+   /* font-size: 3rem; */
+   font-size: clamp(25px, 25vw, 48px);
    width: 100%;
 }
+
