@@ -22,6 +22,7 @@
    padding:0;
    scroll-behavior: smooth;
 }
+
 .main {
    height: 100vh;
 }
@@ -29,6 +30,18 @@
 body {
    background-color: var(--on-primary);
    color: var(--white);
+}
+.dark-top-gradient {
+    position: absolute;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    right: 0;
+    top: 0;
+    left: 0;
+    max-width: 50vw;
+    max-height: 400px;
 }
 
 .menu {
@@ -96,39 +109,6 @@ span.name {
 #Contact {
    height: 500px;
 }
-/* 
-.title {
-    position: relative;
-    display: inline-block;
-}
-
-.title h1 {
-    color: white;
-}
-
-.title::before,
-.title::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: var(--on-tertiary);
-    transition: height 2s;
-}
-
-.title::before {
-    left: 0;
-}
-
-.title::after {
-    right: 0;
-}
-
-.title:hover::before,
-.title:hover::after {
-    height: 0;
-} */
 
 .title {
   position: relative;
