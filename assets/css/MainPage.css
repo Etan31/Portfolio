@@ -20,10 +20,10 @@
    box-sizing: border-box;
    margin:0;
    padding:0;
+   scroll-behavior: smooth;
 }
 .main {
    height: 100vh;
-   display: flex;
 }
 
 body {
@@ -87,6 +87,60 @@ span.name {
 }
 
 .home, .home.active {
-   display: flex;
+    display: flex;
+    top: 50%;
+    height: 100%;
+    position: relative;
+    transform: translateY(-50%);
+}
+#Contact {
+   height: 500px;
+}
+/* 
+.title {
+    position: relative;
+    display: inline-block;
 }
 
+.title h1 {
+    color: white;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--on-tertiary);
+    transition: height 2s;
+}
+
+.title::before {
+    left: 0;
+}
+
+.title::after {
+    right: 0;
+}
+
+.title:hover::before,
+.title:hover::after {
+    height: 0;
+} */
+
+.title {
+  position: relative;
+  display: inline-block;
+  color: white;
+  height: 0;
+  border-left: 3px solid var(--on-tertiary);
+  border-right: 3px solid var(--on-tertiary);
+  transition: height 0.8s;
+  cursor: pointer;
+}
+
+.title:hover {
+   height: 50px;
+}
