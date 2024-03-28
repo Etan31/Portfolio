@@ -42,10 +42,10 @@ body {
    color:white;
 }
 
-.nav:hover {
-    color: var(--on-tertiary);
-    border-bottom: 5px solid var(--on-tertiary);
-    padding-bottom: calc(-5% - 5px);
+.nav:hover ,.nav.active{
+   color: var(--on-tertiary);
+   border-bottom: 5px solid var(--on-tertiary);
+   padding-bottom: calc(-5% - 5px);
 }
 
 
