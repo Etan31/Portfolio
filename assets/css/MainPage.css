@@ -2,7 +2,10 @@
    --on-primary: #0E153A;
    --on-secondary: #3D5AF1;
    --on-tertiary: #22D1EE;
+   --on-tertiary-transparent: #22cfeeb5;
    --white: #FFFFFF;
+   --font-family-bold: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+   --font-family-bold-reg: 'Tw Cen MT Condensed Extra Bold Regular'  sans-serif; 
 }
 
 /* IMPORTED FONTS */
@@ -23,6 +26,8 @@
    scroll-behavior: smooth;
 }
 
+
+/* ////////////HOME//////////////// */
 .main {
    height: 100vh;
 }
@@ -63,7 +68,7 @@ body {
 
 
 
-span.name {
+span.unique {
    color: var(--on-tertiary)
 }
 
@@ -78,7 +83,8 @@ span.name {
    justify-content: center;
    position:absolute;
    top: 95%;
-   left: 50%
+   left: 50%;
+   transform: translate(-95%, 0%)
 }
 
 .my-info {
@@ -106,22 +112,113 @@ span.name {
     position: relative;
     transform: translateY(-50%);
 }
-#Contact {
-   height: 500px;
-   background-image: url(https://workik-websites.s3.amazonaws.com/39/staticassets/images/Pattern.svg);
-}
+
 
 .title {
   position: relative;
-  display: inline-block;
-  color: white;
+  display: flex;
+  color: var(--on-tertiary);
+  padding-inline: 20px;
+  font-family: var(--font-family-bold-reg);
+  /* background-color:#0000003c; */
   height: 0;
   border-left: 3px solid var(--on-tertiary);
   border-right: 3px solid var(--on-tertiary);
-  transition: height 0.8s;
+  transition: height 0.65s;
   cursor: pointer;
+   font-size: clamp(11px, 4vw, 15px);
+   align-items: center;
+}
+
+.titlebg {
+   display: flex;
+   align-items: center;
+   background-color: #00000025;
+   position: absolute;
+   height: 50px;
+   margin-inline: clamp(10px, 4vw, 50px);
 }
 
 .title:hover {
    height: 50px;
 }
+
+
+/* ////////////CONTACT//////////////// */
+
+#Contact {
+   height: 100vh;
+   background-image: url(https://workik-websites.s3.amazonaws.com/39/staticassets/images/Pattern.svg) ;
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+.left {
+   margin-left: clamp(10px, 4vw, 20px);
+   width: 45%;
+}
+
+.contact-main {
+   display: flex;
+   position: relative;
+   top:50%;
+   transform: translateY(-50%);
+   height: max-content;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.containerText {
+   font-family: var(--font-family-bold-reg);
+   word-spacing: 1%;
+   padding-block: 20px;
+   width:60%;
+   align-items:stretch;
+}
+
+.text > .containerText{
+   font-size: clamp(15px, 4vw, 20px);
+   padding-inline: 15px;
+   width: 100%;
+}
+
+.containerText.thanks {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
+}
+
+.right {
+   margin-right: clamp(15px, 4vw, 20px);
+   width: 45%;
+   display: flex;
+   flex-direction: column;
+}
+
+.inputgroup {
+   padding-block:10px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.inputgroup > label {
+   color: var(--on-tertiary);
+   font-size: 18px;
+   font-family: var(--font-family-bold-reg);
+}
+
+.inputgroup > input {
+   width: 90%;
+   background-color: #e2f3f541;
+   border: 3px solid var(--on-tertiary-transparent);
+   height: 40px;
+}
+.lastInput > input {
+   height: clamp(150px, 20vw, 200px);
+}
+
+
