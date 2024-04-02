@@ -191,6 +191,10 @@ span.unique {
    text-align: center;
 }
 
+span.thankyou {
+   padding-inline: 10px;
+}
+
 .right {
    margin-right: clamp(15px, 4vw, 20px);
    width: 45%;
@@ -221,4 +225,19 @@ span.unique {
    height: clamp(150px, 20vw, 200px);
 }
 
+.submitBtn-container {
+   display: flex;
+   justify-content: right;
+}
+
+.btn-submit {
+   margin-top: 10px;
+   margin-right: calc(100% - 90%);
+   background-color: var(--on-tertiary);
+   padding-block: 10px;
+   padding-inline: clamp(20px, 4vw, 50px);
+   border:none;
+   color: var(--on-primary);
+
+}
 
