@@ -175,6 +175,7 @@ span.unique {
    padding-block: 20px;
    width:60%;
    align-items:stretch;
+   text-indent: 20px;
 }
 
 .text > .containerText{
